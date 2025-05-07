@@ -1,5 +1,5 @@
-# ICML_code
-This repository contains the code associated with the paper submitted to the Forty-Second International Conference on Machine Learning (ICML).
+# NIPS_code
+This repository contains the code associated with the paper submitted to the Conference and Workshop on Neural Information Processing Systems (NIPS).
 ## Data
 The raw experimental data is stored in the `original_data` folder. To prepare the input file required for the experiment, which adheres to the CL restrictions, the raw data can be processed using the provided interface in the `src/data_deal.py` file. This script ensures that the raw data is converted into the appropriate format for subsequent experimental use.
 ## License
