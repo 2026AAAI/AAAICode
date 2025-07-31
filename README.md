@@ -1,7 +1,7 @@
-# NIPS_code
-This repository contains the code associated with the paper submitted to the Conference and Workshop on Neural Information Processing Systems (NIPS).
+# AAAI_code
+This repository contains the code associated with the paper submitted to the Conference and Workshop on Association for the Advancement of Artificial Intelligence (AAAI).
 ## Data
-The raw experimental data is stored in the `original_data` folder. To prepare the input file required for the experiment, which adheres to the CL restrictions, the raw data can be processed using the provided interface in the `src/data_deal.py` file. This script ensures that the raw data is converted into the appropriate format for subsequent experimental use.
+The raw experimental data is stored in the `M` and `ORLIB` folders. To prepare the input file required for the experiment, which adheres to the CL restrictions, the raw data can be processed using the provided interface in the `data_deal_FL.py` file. This script ensures that the raw data is converted into the appropriate format for subsequent experimental use.
 ## License
 The code is released under the GNU General Public License, version 3, or any later version as published by the Free Software Foundation.
 ## Usage
@@ -9,12 +9,11 @@ Download the code.
 ### Steps to Test the Dataset
 
 1. **Generate Input Data:**  
-   Run `src/data_deal.py` to process the dataset and generate input files with CL constraints.
+   Run `data_deal.py` to process the dataset and generate input files with CL constraints.
 
 2. **Run the Proposed Algorithm:**  
-   Execute `src/facility_location.py` to obtain the results of our proposed algorithm.
+   Execute `Facility_CL.py` to obtain the results of our proposed algorithm.
 
 3. **Run the Baseline Algorithm:**  
-   Execute `src/compare.py` to obtain the results of the baseline algorithms for comparison.
-
+   Execute `compare_Greedy.py` and  `compare_Greedy_matching.py` to obtain the results of the baseline algorithms for comparison.
 
