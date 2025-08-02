@@ -1,7 +1,7 @@
 # AAAI_code
 This repository contains the code associated with the paper submitted to the Conference and Workshop on Association for the Advancement of Artificial Intelligence (AAAI).
 ## Data
-The raw experimental data is stored in the `M` and `ORLIB` folders. To prepare the input file required for the experiment, which adheres to the CL restrictions, the raw data can be processed using the provided interface in the `data_deal_FL.py` file. This script ensures that the raw data is converted into the appropriate format for subsequent experimental use.
+The raw experimental data is stored in the `M` and `ORLIB` folders. To prepare the input file required for the experiment, which adheres to the CL restrictions, the raw data can be processed using the provided interface in the `data_deal_FL.py` file. This script ensures that the raw data is converted into the appropriate format for subsequent experimental use. Similarly, for clustered datasets, "data_deal_clustring.py" is used for processing.
 ## License
 The code is released under the GNU General Public License, version 3, or any later version as published by the Free Software Foundation.
 ## Usage
