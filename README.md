@@ -9,7 +9,7 @@ Download the code.
 ### Steps to Test the Dataset
 
 1. **Generate Input Data:**  
-   Run `data_deal.py` to process the dataset and generate input files with CL constraints.
+   Run `data_deal_FL.py` to process the dataset and generate input files with CL constraints.
 
 2. **Run the Proposed Algorithm:**  
    Execute `Facility_CL.py` to obtain the results of our proposed algorithm.
