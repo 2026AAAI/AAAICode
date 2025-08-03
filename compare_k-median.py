@@ -171,7 +171,7 @@ if __name__ == "__main__":
             RI_sum = 0
             nmi_sum = 0
             elapsed_time_sum = 0
-            for i in range(1,11):
+            for i in range(1,101):
                 dis,category= data_deal.read_obesity_data(percent,i,0)
                 FL = copy.deepcopy(a_FL)
                 # FL,cal_elapsed_time = main(dis,category)
@@ -182,9 +182,10 @@ if __name__ == "__main__":
                 RI_sum += RI
                 nmi_sum += nmi
                 elapsed_time_sum += elapsed_time+cal_elapsed_time
-            f_value_avg = f_value_sum / 10
-            purity_avg = purity_sum / 10
-            RI_avg = RI_sum / 10
-            nmi_avg = nmi_sum / 10
-            elapsed_time_avg = elapsed_time_sum /10
+            f_value_avg = f_value_sum / 100
+            purity_avg = purity_sum / 100
+            RI_avg = RI_sum / 100
+            nmi_avg = nmi_sum / 100
+            elapsed_time_avg = elapsed_time_sum /100
+
             file.write(f"{percent}% \t {f_value_avg} \t {purity_avg} \t {RI_avg} \t {nmi_avg} \t {elapsed_time_avg}\n")
