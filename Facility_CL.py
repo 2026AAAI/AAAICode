@@ -205,12 +205,13 @@ if __name__ == "__main__":
             for percent in percents:
                 f_value_sum = 0
                 elapsed_time_sum = 0
-                for i in range(1, 11):
+                for i in range(1, 101):
                     facility_costs, distance_matrix = data_deal_FL.read_file(0, file_name)
                     Y = data_deal_FL.read_CL(percent, i, file_name)
                     f_value, elapsed_time = main(distance_matrix, Y, percent, i, facility_costs, file_name)
                     f_value_sum += f_value
                     elapsed_time_sum += elapsed_time
-                f_value_avg = f_value_sum / 10
-                elapsed_time_avg = elapsed_time_sum / 10
+                f_value_avg = f_value_sum / 100
+                elapsed_time_avg = elapsed_time_sum / 100
                 file.write(f"{percent}% \t {f_value_avg}  \t {elapsed_time_avg}\n")
+
