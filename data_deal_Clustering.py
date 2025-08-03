@@ -236,9 +236,10 @@ def read_CL(percent, i):
 
 if __name__ == "__main__":
     for percent in [2, 4, 6, 8, 10]:
-        for i in range(1, 11):
+        for i in range(1, 101):
             read_obesity_data(percent, i, 1)
     # heart_data()
     # wholesale_data()
     # obesity_data()
     # student_data()
+
