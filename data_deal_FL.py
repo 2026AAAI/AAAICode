@@ -44,8 +44,8 @@ def read_facility_data(file_path, file_name, is_generate_CL = 0):
     k = len(distance_matrix[0])
     r = int(len(facility_costs)/4)
     if is_generate_CL:
-        for percent in [10]:
-            for i in range(1, 11):
+        for percent in [2,4,6,8,10]:
+            for i in range(1, 101):
                 output_file = f'output\\{file_name}\\{percent}%CL_{i}.txt'
                 generate_CL_to_file(k,percent,r,output_file)
 
